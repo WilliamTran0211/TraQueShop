@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "TrangChu";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+<h2>TrangChu</h2>
+@*<a href="~/Home/TinTuc"> tin Tức</a>
+    <a href="~/Home/GioiThieu"> GioiThieu</a>*@
+@Html.ActionLink("Tin Tức", "TinTuc", "Home");
+@Html.ActionLink("Giới Thiệu", "GioiThieu", "Home");
+
+<ul>
+    @foreach (var danhmuc in ViewBag.Test)
+    {
+        <li>@danhmuc</li>
+    }
+</ul>
+
+
+
